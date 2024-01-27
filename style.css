@@ -152,7 +152,7 @@ p.stack {
     grid-row-gap: 0px;
     justify-content: center;
     align-items: center;
-    /*margin: 10px;*/
+    margin-bottom: 2.5rem;
 }
 
 .about-me-text-container h2 {
@@ -193,7 +193,81 @@ p.stack {
     margin: 50px 0;
 }
 
-#skills {
+#skills-container {
     display: flex;
     width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem;
+}
+
+#skills h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.3rem;
+    text-decoration: underline;
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    
+}
+
+#skills-container > *{
+    font-size: 3.3em;
+    width: 2em;
+}
+
+#projects {
+    margin: 4rem;
+}
+
+#projects h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.3rem;
+    text-decoration: underline;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.3rem;
+    padding: 1.5rem;
+}
+
+.project h3 {
+    font-size: 2rem;
+    background-color: rgba(52, 50, 168, .8);
+    margin: 1.2rem;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+}
+
+.project-image {
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;*/
+    max-width: 100%;
+    width: 380px;
+    height: auto;
+    object-fit: contain;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project p {
+    font-size: 1.5rem;
+}
+
+footer {
+    font-size: 1.3rem;
+    margin-top: auto;
+    padding: var(--spacing-2) 0;
+    text-align: center;
+    letter-spacing: 2.3px;
+    border-top: solid 2px #3432a8;
 }
