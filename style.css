@@ -18,6 +18,7 @@ h2 {
 
 body {
     background-color: black;
+    color: #F8F8FF;
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
@@ -45,6 +46,7 @@ nav{
     border-radius: 20px;
     list-style-type: none;
     text-decoration: none;
+    letter-spacing: 2px;
     padding: .5rem;
 }
 
@@ -67,8 +69,8 @@ nav{
     list-style: none;
     font-size: 1em;
     font-weight: 400;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    letter-spacing: 2px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+    letter-spacing: 3.5px;
     border-color: #3432a8;
     border-width: 4px;
     border-radius: 15px;
@@ -139,4 +141,59 @@ p.stack {
     object-fit: cover;
     margin: 0 0 1.2rem 0;
     padding: 0;
+}
+
+
+.about-me-text-container {
+    display: grid;
+    grid-template-columns: repeat(21, .3fr);
+    grid-template-rows: repeat(5, .2fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-content: center;
+    align-items: center;
+    /*margin: 10px;*/
+}
+
+.about-me-text-container h2 {
+    text-align: center;
+    background-color: rgba(52, 50, 168, .6);
+    border: solid 2px rgba(89, 88, 166);
+    box-shadow: 0 0 30px rgba(52, 50, 168, .8);
+    border-radius: 10px;
+    font-size: 4rem;
+    font-weight: 700;
+    grid-column-start: 4; 
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    /*margin: 3;*/
+    padding: 3rem .3rem;
+}
+
+.about-me-text-container ul {
+    text-align: center;
+    background-color: rgba(52, 50, 168, .6);
+    border: solid 2px rgba(89, 88, 166);
+    box-shadow: 0 0 30px rgba(52, 50, 168, .8);
+    border-radius: 10px;
+    list-style-type: none;
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+    grid-column-start: 12; 
+    grid-column-end: 20;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.about-me-text-container li {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 50px 0;
+}
+
+#skills {
+    display: flex;
+    width: 100%;
 }
