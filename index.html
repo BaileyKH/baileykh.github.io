@@ -107,5 +107,29 @@
         </main>
 
         <footer>Bailey Henderson | Arizona | hen.baileyk@gmail.com</footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var logo = document.getElementById("logo");
+        
+                // Click event listener to the logo added
+                logo.addEventListener("click", function() {
+                    // Generate a random color
+                    var randomColor = getRandomColor();
+        
+                    // Change the background color to the random color
+                    logo.style.backgroundColor = randomColor;
+                });
+        
+                // Function to generate a random color
+                function getRandomColor() {
+                    var letters = "0123456789ABCDEF";
+                    var color = "#";
+                    for (var i = 0; i < 6; i++) {
+                        color += letters[Math.floor(Math.random() * 16)];
+                    }
+                    return color;
+                }
+            });
+        </script>
     </body>
 </html>
